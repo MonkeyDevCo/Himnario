@@ -6,7 +6,7 @@ import { HomeComponent } from './home/home.component';
 
 
 const routes: Routes = [
-	{ path: 'politics', component: PoliticsComponent },
+	{ path: 'policy', component: PoliticsComponent },
 	{ path: 'faq', component: FaqComponent },
     { path: '**',  redirectTo: '/home' },
     { path: 'home', component: HomeComponent}

@@ -18,7 +18,7 @@ export class NavbarComponent implements OnInit {
   	let lang = this.getCurrentLang();
 
   	if(lang=='en'){
-  		this.politics = 'Politic';
+  		this.politics = 'Policy';
   		this.language = 'Language';
   	}else{
   		this.politics = 'Política';
