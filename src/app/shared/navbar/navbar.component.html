@@ -4,13 +4,11 @@
   </mat-button>
   <span class="fill-remaining-space"></span>
 
-  <mat-button routerLink="/politics" routerLinkActive="active">
-  	<span>Política</span>
-  </mat-button>
+  <span class="mat-button" routerLink="/politics" routerLinkActive="active">{{politics}}</span>
 
-  <mat-button routerLink="/faq" routerLinkActive="active">
-  	<span>FAQ</span>
-  </mat-button>
+  <span class="mat-button" routerLink="/faq" routerLinkActive="active">FAQ</span>
+
+  <span class="mat-button" (click)="changeLang()"><i class="fa fa-globe fa-lg"></i>{{language}}</span>
   
 
 </mat-toolbar>

@@ -6,25 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./politics.component.css']
 })
 export class PoliticsComponent implements OnInit {
-
+  lang: string ; 
   constructor() { }
 
   ngOnInit(): void {
+    this.lang = this.getCurrentLang();
   }
 
-  changeLanguage(){
-  	var x = document.getElementById("privacy_ES");
-    var y = document.getElementById("privacy_EN");
-    var z = document.getElementById("language");
-    if (x.style.display === "none") {
-      x.style.display = "block";
-      y.style.display = "none";
-      z.innerHTML = "<i class=\"fa fa-globe fa-lg\"></i> English";
-    } else {
-      x.style.display = "none";
-      y.style.display = "block";
-      z.innerHTML = "<i class=\"fa fa-globe fa-lg\"></i> Español";
-    }
+  getCurrentLang():string{
+    return localStorage.getItem('language') || 'en';
   }
 
 }

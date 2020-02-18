@@ -1,9 +1,4 @@
-<div>
-  <p id="language" (click)="changeLanguage()" class="languageButton">
-  <i class="fa fa-globe fa-lg"></i> Español</p>
-</div>
-
-<div id="privacy_EN" class="container">
+<div class="container" *ngIf="lang=='en'">
               <h2>Privacy Policy</h2> 
               <p>
                 MonkeyDev built the Pentecostal Hymnal app as
@@ -169,7 +164,7 @@
               </p>
 </div>
             
-<div id="privacy_ES" class="container" hidden>
+<div class="container" *ngIf="lang=='es'">
               <h2>Política de Privacidad</h2> 
               <p>
                 MonkeyDev desarrolló la aplicación Himnario Pentecostal como

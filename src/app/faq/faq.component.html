@@ -2,32 +2,50 @@
 	<h2>FAQ</h2>
 
 	<mat-expansion-panel>
-	  <mat-expansion-panel-header>
-	    <mat-panel-title>
+	  <mat-expansion-panel-header *ngIf="lang=='en'">
+	    <mat-panel-title >
 	      How to search a song?
 	    </mat-panel-title>
-	    <mat-panel-description>
-	      This is a summary of the content
-	    </mat-panel-description>
 	  </mat-expansion-panel-header>
 
+	  <mat-expansion-panel-header *ngIf="lang=='es'">
+	    <mat-panel-title >
+	      ¿Cómo buscar una canción?
+	    </mat-panel-title>
+	  </mat-expansion-panel-header>
+
+	 <div *ngIf="lang=='en'">
 	  <p>First, select from home a section (Anthems or Choruses) </p>
 	  <p>Second, Write into searchbar what song do you want to find using a title extract or a number </p>
 	  <p>Finally, select a song from list </p>
+	</div>
+	<div *ngIf="lang=='es'">
+	  <p>Primero, selecciona una sección (Coritos o Himnos)</p>
+	  <p>Luego, escribe dentro del buscador cuál canción deseas buscar usando un extracto del título o un número </p>
+	  <p>Finalmente, selecciona la canción desde el listado </p>
+	</div>
 
 	</mat-expansion-panel>
 
 	<mat-expansion-panel>
-	  <mat-expansion-panel-header>
+	  <mat-expansion-panel-header *ngIf="lang=='en'">
 	    <mat-panel-title>
 	      How to change size?
 	    </mat-panel-title>
-	    <mat-panel-description>
-	      This is a summary of the content
-	    </mat-panel-description>
 	  </mat-expansion-panel-header>
 
-	  <p>From home section change song size</p>
+	  <mat-expansion-panel-header *ngIf="lang=='es'">
+	    <mat-panel-title>
+	      ¿Cómo cambiar el tamaño del contenido de una canción?
+	    </mat-panel-title>
+	  </mat-expansion-panel-header>
+
+	  <div *ngIf="lang=='en'">
+	  	<p>From home section change song size</p>
+	  </div>
+	  <div *ngIf="lang=='es'">
+	  	<p>Desde la ventana principal, desliza el selector de tamaño de letra hasta escoger la que más te acomode</p>
+	  </div>
 
 	</mat-expansion-panel>
 </div>

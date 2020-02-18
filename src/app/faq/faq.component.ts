@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./faq.component.css']
 })
 export class FaqComponent implements OnInit {
-
+  lang: string ;
+   
   constructor() { }
 
   ngOnInit(): void {
+    this.lang = this.getCurrentLang();
+  }
+
+  getCurrentLang():string{
+    return localStorage.getItem('language') || 'en';
   }
 
 }
