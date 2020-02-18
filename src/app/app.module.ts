@@ -11,6 +11,8 @@ import { FaqComponent } from './faq/faq.component';
 
 import {MatExpansionModule} from '@angular/material/expansion';
 import { HomeComponent } from './home/home.component';
+import { FooterComponent } from './shared/footer/footer.component';
+import {FlexLayoutModule} from '@angular/flex-layout';
 
 
 @NgModule({
@@ -19,14 +21,16 @@ import { HomeComponent } from './home/home.component';
     NavbarComponent,
     PoliticsComponent,
     FaqComponent,
-    HomeComponent
+    HomeComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule,
-    MatExpansionModule
+    MatExpansionModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]

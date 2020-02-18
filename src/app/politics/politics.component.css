@@ -1,0 +1,5 @@
+.languageButton{
+	float: right; 
+	cursor: pointer;
+	padding: 20px;
+}

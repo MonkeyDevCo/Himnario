@@ -11,3 +11,7 @@ mat-button.active{
 	border-bottom-style: solid;
 	border-bottom-width: 3px;
 }
+
+mat-button:hover{
+	cursor: pointer;
+}
