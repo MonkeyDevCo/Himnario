@@ -13,6 +13,7 @@ import {MatExpansionModule} from '@angular/material/expansion';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import {FlexLayoutModule} from '@angular/flex-layout';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import {FlexLayoutModule} from '@angular/flex-layout';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatExpansionModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
