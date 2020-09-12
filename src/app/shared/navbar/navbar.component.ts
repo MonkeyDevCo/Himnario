@@ -10,14 +10,15 @@ export class NavbarComponent implements OnInit {
 
   title: string = environment.titleApp; 
   politics: string;
-  language: string
+  language: string;
+  lang: string;
 
   constructor() {}
 
   ngOnInit(): void {
-  	let lang = this.getCurrentLang();
+  	this.lang = this.getCurrentLang();
 
-  	if(lang=='en'){
+  	if(this.lang=='en'){
   		this.politics = 'Policy';
   		this.language = 'Language';
   	}else{
@@ -31,8 +32,8 @@ export class NavbarComponent implements OnInit {
   }
 
   changeLang(){
-  	let lang = this.getCurrentLang();
-  	if(lang=='en'){
+  	this.lang = this.getCurrentLang();
+  	if(this.lang=='en'){
   		localStorage.setItem('language', 'es');
   	}
   	else{

@@ -2,6 +2,10 @@
   flex: 1 1 auto;
 }
 
+mat-button>span{
+	font-size: 18px;
+}
+
 .mat-button{
 	padding: 10px;
 	font-size: 18px;
